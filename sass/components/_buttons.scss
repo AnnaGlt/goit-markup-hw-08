@@ -1,0 +1,64 @@
+
+.button {
+    height: 50px;
+    font-family: var(--main-font), sans-serif;
+    color: var(--primery-white-coloc);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.button__secondary {
+    height: 38px;
+    border-radius: 4px;
+
+    color: var(--title-text-coloc);
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background-color: var(--secondary-background-color);
+    padding: 6px 22px;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+        color: var(--primery-white-coloc);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }    
+}
+
+.footer-button {
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+}
+
+.add-button {
+    content: "";
+    background-size: contain;
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+
+.current {
+    background-color: var(--accent-color);
+    color: var(--primery-white-coloc);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}

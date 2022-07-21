@@ -1,0 +1,56 @@
+.social-list {
+    @extend %list;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list__img:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__img {
+    position: relative;
+}
+
+.social-list__ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%)
+}
+
+.social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .social-list__team,
+    &:focus .social-list__team {
+        fill: var(--primery-white-coloc);
+    }
+}
+
+.social-list__team {
+    fill: var(--social-icon-color);
+}
+
+.social-link-footer {   
+    fill: var(--primery-white-coloc);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+

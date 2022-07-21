@@ -1,0 +1,32 @@
+.button-modal-send {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+.exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translate(-8px, 8px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--primery-white-coloc);
+    cursor: pointer;
+
+    transition: fill var(--anim-slow);
+
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
+    }
+}

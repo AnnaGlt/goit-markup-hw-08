@@ -1,0 +1,30 @@
+.clients {
+    padding: 94px 0;
+
+    @extend %list;
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        object-position: center;
+        fill: rgba(175, 177, 184, 1);
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+
+        transition: fill var(--anim-slow);
+    }
+
+    &__img:hover,
+    &__img:focus-within {
+        fill: rgba(33, 150, 243, 1);
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.clients__logo {
+    @extend %list;
+    justify-content: space-between;
+}

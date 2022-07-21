@@ -1,0 +1,56 @@
+.contacts {
+    @extend %list;
+
+    margin-left: auto;
+}
+
+.contact {
+    @extend %link;
+
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+
+    transition: color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }    
+}
+
+.mail {
+    margin-right: 50px;
+}
+
+.ico {
+    margin-right: 10px;
+    object-position: center;
+    fill: currentColor;
+
+    transition: color var(--anim-slow);
+
+    & :hover,
+    & :focus {
+        color: var(--accent-color);
+    }    
+}
+
+.map {
+    margin-bottom: 9px;
+}
+
+.mail-footer {
+    margin-bottom: 9px;
+}
+
+
+
+
+
+
+
+
+
+

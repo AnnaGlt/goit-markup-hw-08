@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--primery-white-coloc);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container--position {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}

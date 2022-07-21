@@ -1,0 +1,12 @@
+body {
+    background-color: var(--primery-white-coloc);
+    color: var(--primery-text-color);
+    font-family: var(--main-font), sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
