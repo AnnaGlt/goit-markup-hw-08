@@ -1,6 +1,7 @@
 .social-list {
     @extend %list;
-    padding-left: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .social-list__img:not(:last-child) {
@@ -29,20 +30,13 @@
     border-radius: 50%;
 
     transition: background-color var(--anim-slow);
+    fill: var(--social-icon-color);
 
     &:hover,
     &:focus {
         background-color: var(--accent-color);
-    }
-
-    &:hover .social-list__team,
-    &:focus .social-list__team {
         fill: var(--primery-white-coloc);
     }
-}
-
-.social-list__team {
-    fill: var(--social-icon-color);
 }
 
 .social-link-footer {   

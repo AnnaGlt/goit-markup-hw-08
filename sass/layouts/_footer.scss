@@ -1,15 +1,7 @@
-.footer-follow {
-    width: 570px;
-    flex-direction: row;
-}
-
 .footer {
     display: flex;
-
-    &-main {
-        margin-right: 70px;
-        width: 231px;
-    }
+    flex-direction: column;
+    align-items: center;
 
     &-contacts {
         display: block;
@@ -17,6 +9,50 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         padding: 0;
+    } 
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        flex-direction: row;
+    }
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        width: 231px;
+        margin-bottom: 20px;
+        align-items:flex-start;
+    }
+}
+
+.footer-add {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+    }
+}
+
+.footer-follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        align-items: normal;
     }
 }
 
@@ -39,16 +75,23 @@
 }
 
 .footer-add {
-    padding-top: 12px;
-    margin-right: 93px;
-    width: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        width: 206px; 
+        align-items:flex-start;
+    } 
 }
 
 .add-to-us {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
     margin-right: 10px;
+    margin-bottom: 20px;
     justify-content: flex-end;
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -57,6 +100,11 @@
     background-color: transparent;
     color: var(--primery-white-coloc);
     outline: transparent;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;    
+    }
+    
 
     &::placeholder {
         font-size: 16px;
@@ -72,5 +120,12 @@
 
 .footer-form {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
