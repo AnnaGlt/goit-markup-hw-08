@@ -1,7 +1,20 @@
 .contacts {
     @extend %list;
 
-    margin-left: auto;
+    display: none;
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+.contacts__item {
+    margin-bottom: 10px;
 }
 
 .contact {
@@ -11,6 +24,7 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
+    padding: 0;
 
     transition: color var(--anim-slow);
 
@@ -21,7 +35,9 @@
 }
 
 .mail {
-    margin-right: 50px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
 }
 
 .ico {

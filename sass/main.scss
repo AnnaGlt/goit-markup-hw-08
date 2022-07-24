@@ -6,6 +6,7 @@
 //base styles
 @import "./base/common";
 @import "./base/reset";
+@import "./base/card-set";
 
 //components styles
 @import "./components/buttons";
@@ -17,6 +18,7 @@
 @import "./components/contact";
 @import "./components/logo";
 @import "./components/nav";
+@import "./components/mobile-menu";
 
 //layout styles
 @import "./layouts/about";

@@ -1,9 +1,6 @@
 .social-list {
     @extend %list;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 0;
 }
 
 .social-list__img:not(:last-child) {
