@@ -7,6 +7,7 @@
 }
 
 .clients__logo {
+    @extend %list;
     --item: 2;
     justify-content: space-between;
 

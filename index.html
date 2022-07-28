@@ -55,10 +55,12 @@
         <div class="mobile-menu" data-menu>
           <ul class="mobile-menu-nav list">
             <li class="mobile-menu-nav-item">
-              <a class="link mobile-menu-nav-item__current" href="">Студия </a>
+              <a class="link mobile-menu-nav-item__current" href="./index.html"
+                >Студия
+              </a>
             </li>
             <li class="mobile-menu-nav-item">
-              <a class="link" href="">Портфоліо </a>
+              <a class="link" href="./portfolio.html">Портфоліо </a>
             </li>
             <li class="mobile-menu-nav-item">
               <a class="link" href="">Контакти</a>
@@ -150,7 +152,7 @@
       <section class="benefits">
         <div class="container">
           <h2 hidden>особенности</h2>
-          <ul class="benefits__list card-set list">
+          <ul class="benefits__list card-set">
             <li class="benefits__item card-set__item">
               <div class="benefits__ico">
                 <svg width="65" height="70" class="benefits__img">
@@ -211,7 +213,7 @@
             <li class="about__item">
               <img
                 class="about__img"
-                src="./img/01.jpg"
+                src="./images/about/1.jpg"
                 alt="Фото"
                 width="370"
                 height="294"
@@ -221,7 +223,7 @@
             <li class="about__item">
               <img
                 class="about__img"
-                src="./img/02jpg.jpg"
+                src="./images/about/2.jpg"
                 alt="Фото"
                 width="370"
                 height="294"
@@ -231,7 +233,7 @@
             <li class="about__item">
               <img
                 class="about__img"
-                src="./img/03jpg.jpg"
+                src="./images/about/3.jpg"
                 alt="Фото"
                 width="370"
                 height="294"
@@ -246,14 +248,33 @@
       <section class="section__team">
         <div class="container team-conteiner">
           <h2 class="title">Наша команда</h2>
-          <ul class="team card-set list">
+          <ul class="team card-set">
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./img/1.jpg"
-                alt="портрет Игоря"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200)"
+                  srcset="./images/team/1.jpg 1x, ./images/team/1@2X.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768)"
+                  srcset="./images/team/1m.jpg 1x, ./images/team/1m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767)"
+                  srcset="./images/team/1s.jpg 1x, ./images/team/1s@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/1s.jpg"
+                  alt="портрет Игоря"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team__pic">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -290,12 +311,30 @@
               </div>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./img/2.jpg"
-                alt="портрет Ольги"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200)"
+                  srcset="./images/team/2.jpg 1x, ./images/team/2@2X.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768)"
+                  srcset="./images/team/2m.jpg 1x, ./images/team/2m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767)"
+                  srcset="./images/team/2s.jpg 1x, ./images/team/2s@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/2s.jpg"
+                  alt="портрет Ольги"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__pic">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -332,12 +371,30 @@
               </div>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./img/3.jpg"
-                alt="портрет Николая"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200)"
+                  srcset="./images/team/3.jpg 1x, ./images/team/3@2X.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768)"
+                  srcset="./images/team/3m.jpg 1x, ./images/team/3m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767)"
+                  srcset="./images/team/3s.jpg 1x, ./images/team/3s@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/3s.jpg"
+                  alt="портрет Николая"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__pic">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -374,7 +431,30 @@
               </div>
             </li>
             <li class="team__item card-set__item">
-              <img src="./img/4.jpg" alt="портрет Михаила" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200)"
+                  srcset="./images/team/4.jpg 1x, ./images/team/4@2X.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768)"
+                  srcset="./images/team/4m.jpg 1x, ./images/team/4m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767)"
+                  srcset="./images/team/4s.jpg 1x, ./images/team/4s@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/4s.jpg"
+                  alt="портрет Михаила"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__pic">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -418,7 +498,7 @@
       <section class="clients">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="clients__logo card-set list">
+          <ul class="clients__logo card-set">
             <li class="clients__item card-set__item">
               <a class="clients__img" href="">
                 <svg width="41" height="47" class="clients__icon">
