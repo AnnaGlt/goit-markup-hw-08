@@ -1,6 +1,7 @@
 .logo-header {
     @extend %list;
     @extend %link;
+    padding: 16px 0 16px;
 
     font-weight: 700;
     font-size: 26px;

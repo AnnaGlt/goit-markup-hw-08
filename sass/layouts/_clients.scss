@@ -8,6 +8,9 @@
 
 .clients__logo {
     @extend %list;
+}
+
+.clients__item {
     --item: 2;
     justify-content: space-between;
 
@@ -17,7 +20,7 @@
 
     @media screen and (min-width: 1200px) {
         --items: 6;
-    } 
+    }
 }
 
 .clients__img {

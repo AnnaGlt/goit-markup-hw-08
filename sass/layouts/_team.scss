@@ -1,19 +1,30 @@
 .team {
     @extend %list;
-    width: 450px;
-    height: 622px;
 
     @media screen and (min-width: 768px) {
-        --item: 2;
-        width: 354px;
-        height: 536px;
+        display: flex;
+        flex-wrap: wrap;
     }
+}
 
+.team__item {
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+        --items: 2;
+        --indent:60px;
+    }
+    
     @media screen and (min-width: 1200px) {
-        --items: 4;
-        width: 270px;
-        height: 428px;
-    } 
+        --items: 3;
+        --indent: 120px;
+    }
+        
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .team__title {

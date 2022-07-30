@@ -19,7 +19,7 @@
     margin-bottom: 15px;
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
+        margin-bottom: -15px;
     }
 }
 
@@ -70,7 +70,7 @@
 }
 
 .project__text-hight {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 36px;    
     }   
 }

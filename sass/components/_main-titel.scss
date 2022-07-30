@@ -1,5 +1,4 @@
 .title {
-    margin-bottom: 50px;
     color: var(--title-text-coloc);
     font-weight: 700;
     font-size: 28px;
@@ -7,7 +6,10 @@
     text-align: center;
     letter-spacing: 0.03em;
 
+    margin-bottom: 30px;
+    
     @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
         font-size: 36px;
     }
 }
