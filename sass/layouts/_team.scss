@@ -1,18 +1,26 @@
 .team {
     @extend %list;
 
+    margin-left: -15px;
+    margin-right: -15px;
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 .team__item {
     --items: 1;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
         --items: 2;
-        --indent:60px;
     }
     
     @media screen and (min-width: 1200px) {
@@ -52,5 +60,9 @@
     font-family: var(--main-font);
     letter-spacing: 0.03em;
     margin-bottom: 16px;
+}
+
+.team__img {
+    width: 100%;
 }
  

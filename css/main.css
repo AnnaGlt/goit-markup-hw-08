@@ -46,7 +46,14 @@
   transition: color var(--anim-slow);
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
+  width: 100%;
   background-color: var(--primery-white-coloc);
   color: var(--primery-text-color);
   font-family: var(--main-font), sans-serif;
@@ -186,12 +193,12 @@ address {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -232,8 +239,14 @@ address {
 }
 
 .portfolio__section {
-  padding-top: 100px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__section {
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
 }
 
 .social-list__img:not(:last-child) {
@@ -512,10 +525,24 @@ address {
 }
 
 .agree-text {
+  font-size: 12px;
+  line-height: 1.16;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 768px) {
+  .agree-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .agree-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .textarea {
@@ -534,6 +561,7 @@ address {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -599,6 +627,11 @@ address {
 }
 .logo-header__title {
   color: var(--black);
+}
+@media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo-header {
@@ -684,6 +717,7 @@ address {
 .mobile-menu-btn {
   background-color: transparent;
   border: none;
+  margin-left: auto;
   width: 40;
   height: 40;
   z-index: 1000;
@@ -1085,11 +1119,12 @@ address {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
+.team {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 @media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
@@ -1099,14 +1134,20 @@ address {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 .team__item {
   --items: 1;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__item {
     --items: 2;
-    --indent:60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1149,33 +1190,54 @@ address {
   margin-bottom: 16px;
 }
 
+.team__img {
+  width: 100%;
+}
+
 .portfolio {
-  margin-bottom: 56px;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  margin-bottom: 25px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin-bottom: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 35px;
   }
+}
+
+.project__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolio__item {
   margin-right: 8px;
   margin-bottom: 15px;
-}
-@media screen and (min-width: 1200px) {
-  .portfolio__item {
-    margin-bottom: -15px;
-  }
 }
 
 .project {
@@ -1434,6 +1496,11 @@ address {
   background-color: transparent;
   color: var(--primery-white-coloc);
   outline: transparent;
+}
+@media screen and (max-width: 480px) {
+  .add-to-us {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .add-to-us {

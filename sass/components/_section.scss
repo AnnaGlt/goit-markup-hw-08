@@ -16,6 +16,11 @@
 }
 
 .portfolio__section {
-    padding-top: 100px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 94px;
+    }
 }
